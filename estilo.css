@@ -1,0 +1,165 @@
+
+/* aplicando estilos al titulo */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+   }
+    50% {
+        opacity: 1;
+   }
+    100% {
+        opacity: 0;
+   }
+}
+/* fondo a mi pagina */
+body {
+    background-image: url(..imagenes/fondo-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: auto 2 fr auto;
+    grid-template-rows: 20px 1fr 1 fr 1fr 20px;
+    grid-template-areas: "header header header" "main main" "main main" "main main" "footer footer footer";
+}
+.header {
+    display: flex;
+    grid-area: header;
+}
+/*grid al navbar */
+nav {
+    padding: 1 rem;
+    grid-area: nav;
+}
+.menu {
+    list-style-type: none;
+    margin: 0.7rem;
+    grid-area: mmenu;
+    display: flex;
+    justify-content: end;
+   /* agregando estilo a las listas del menu */
+}
+.menu li {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    grid-area: menu li;
+    background-color: yellow;
+}
+.menu li a {
+    text-decoration: none;
+    color: black;
+}
+.menu li:hover {
+    background-color: #e00e0e;
+}
+h1 {
+    color: #030202;
+    font-family: 'Grechen Fuemen', cursive;
+    margin: 10px;
+    padding: 20px;
+    border: 10;
+    grid-area: h1;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 75px;
+    text-align: center;
+}
+.aparecer {
+    margin: 50px;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+/* agregando color, margen, espacio y borde al h2 */
+h2 {
+    color: white;
+    margin: 20px;
+    padding: 20px;
+}
+/* agregando color, margen, espacio y borde al h3 */
+h3 {
+    margin: 20px;
+    padding: 20px;
+    border: 20px;
+    color: black;
+}
+/* agregando color, margen, espacio y borde al h4 */
+h4 {
+    margin: 10px;
+    padding: 10px;
+    border: 10px;
+}
+/* espacios y margen a lista desordenada */
+ul {
+    margin: 10px;
+    padding: 10px;
+    grid-area: ul;
+}
+/* espacios y margen al formulario */
+form {
+    margin: 10px;
+    padding: 10;
+    grid-area: form;
+}
+image {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    grid-area: div;
+}
+.banda {
+    background-image: banda;
+}
+.queen-1 {
+    background-image: queen-1;
+}
+.queen-2 {
+    background-image: queen-2;
+}
+.queen-3 {
+    background-image: queen-3;
+}
+.queen-4 {
+    background-image: queen-4;
+}
+.footer {
+    margin: 10px;
+    padding: 10px;
+}
+.queenn {
+    background-image: queenn;
+    text-align: center;
+}
+/* transicion a la caja*/
+.caja1 {
+    margin: 20px auto;
+    padding: 10px;
+    width: 75vw;
+    height: 15vh;
+    border-top: 30%;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    transition: height 2s, width 1s;
+}
+.caja1:hover {
+    height: 300px;
+    width: 300px;
+}
+/* media queries */
+@media screen and (max-width: 740px) {
+    .body {
+        grid-template-columns: 2 fr;
+        grid-template-rows: repeat(3 fr);
+        grid-template-areas: "header hedaer" "main" "main" "main" "footer footer";
+   }
+}
+@media screen and (max-width: 540px) {
+    .body {
+        grid-template-columns: 1 fr;
+        grid-template-rows: repeat(3 fr 1fr);
+        grid-template-areas: "header" "main" "main" "main" "footer";
+   }
+}
