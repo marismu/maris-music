@@ -1,17 +1,22 @@
 {
-    "name": "musicadesiempre",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build-css": "node-sass --incude-path scss/estilo.scss/estilo.scss css/estilo.css",
-        "watch-css": "nodemon-e scss -x \"npm rum build-css"
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "node-sass": "^7.0.1",
-        "nodemon": "^2.0.16"
-    }
+  "name": "tributo-queen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marismu/maris-music.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marismu/maris-music/issues"
+  },
+  "homepage": "https://github.com/marismu/maris-music#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }

@@ -44,28 +44,25 @@ nav {
     grid-area: mmenu;
     display: flex;
     justify-content: end;
-}
-
-.menu li {
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-    grid-area: menu li;
-    background-color: yellow;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: black;
-}
-
-.menu li:hover {
-    background-color: #e00e0e;
+    li {
+        display: inline-block;
+        text-align: center;
+        margin: 10px;
+        grid-area: menu li;
+        background-color: yellow;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        &:hover {
+            background-color: #e00e0e;
+        }
+    }
 }
 
 h1 {
     color: #030202;
-    font-family: "Grechen Fuemen", cursive;
+    font-family: 'Grechen Fuemen', cursive;
     margin: 10px;
     padding: 20px;
     border: 10;
@@ -181,11 +178,10 @@ image {
     width: 100px;
     height: 100px;
     transition: height 2s, width 1s;
-}
-
-.caja1:hover {
-    height: 300px;
-    width: 300px;
+    &:hover {
+        height: 300px;
+        width: 300px;
+    }
 }
 
 
@@ -206,6 +202,3 @@ image {
         grid-template-areas: "header" "main" "main" "main" "footer";
     }
 }
-
-
-/*# sourceMappingURL=estilo.css.map */
